@@ -34,4 +34,5 @@ Para finalizar la instalación de Django con Postres ejecutamos: `docker exec co
 Troubleshooting:
 
 CommandError: /app/manage.py already exists. Overlaying a project into an existing directory won't replace conflicting files. Este error se refire a que los archivos de una instalación previa están todavía disponibles. Es necesario removerlos para eliminar este error.
+
 6. Toda la documentacion de la API se encuentra en la ruta 'http://localhost:8000/denuncia/docs/', se encuentra documentado con coreapi. 
