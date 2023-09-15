@@ -26,9 +26,12 @@ load_dotenv()
 `
 Guardamos el archivo y ejecutamos `docker compose up`
 
+5. Ahora se debe instalar django-cors-headers: Eso lo hariamos ingresando a docker con el siguiente comando 'docker compose exec backend sh'una vez dentro corremos el siguiente comando 'pip install django-cors-headers' y también instalaremos coreapi con el siguiente comando 'pip install coreapi'
+
+
 Para finalizar la instalación de Django con Postres ejecutamos: `docker exec compose-backend-1 python manage.py migrate` Esto debe crear las tablas de Django en la base de datos
 
 Troubleshooting:
 
 CommandError: /app/manage.py already exists. Overlaying a project into an existing directory won't replace conflicting files. Este error se refire a que los archivos de una instalación previa están todavía disponibles. Es necesario removerlos para eliminar este error.
-5. Toda la documentacion de la API se encuentra en la ruta 'http://localhost:8000/denuncia/docs/', se encuentra documentado con coreapi. 
+6. Toda la documentacion de la API se encuentra en la ruta 'http://localhost:8000/denuncia/docs/', se encuentra documentado con coreapi. 
